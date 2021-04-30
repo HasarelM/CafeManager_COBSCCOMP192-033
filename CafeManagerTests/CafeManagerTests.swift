@@ -20,57 +20,57 @@ class CafeManagerTests: XCTestCase {
 
     func testLoginValidations() throws {
         //Testing a valid email
-        XCTAssertTrue(InputFieldValidator.isValidEmail("hisharadilshan3@gmail.com"))
+        XCTAssertTrue(InputFieldValidator.isValidEmail("hasarelmadola@gmail.com"))
         
         //Testing an invalid email
-        XCTAssertFalse(InputFieldValidator.isValidEmail("abc@_gmail.com"))
+        XCTAssertFalse(InputFieldValidator.isValidEmail("madola_hasa_gmail.com"))
         
         //Testing an invalid email
         XCTAssertFalse(InputFieldValidator.isValidEmail("abc@_gmail.123"))
         
         //Testing a valid password
-        XCTAssertTrue(InputFieldValidator.isValidPassword(pass: "abc@123", minLength: 6, maxLength: 20))
+        XCTAssertTrue(InputFieldValidator.isValidPassword(pass: "madola@123", minLength: 6, maxLength: 20))
         
         //Testing n invalid password
-        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "abc", minLength: 6, maxLength: 20))
+        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "hasarel", minLength: 6, maxLength: 20))
         
         //Testing an invalid password
-        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "abc@1234@1234@abcdedfrefs@12345", minLength: 6, maxLength: 20))
+        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "hasarelmadola1234567890", minLength: 6, maxLength: 20))
     }
     
     func testSignUpValidations() throws {
         //Testing a valid name
-        XCTAssertTrue(InputFieldValidator.isValidName("hishara"))
+        XCTAssertTrue(InputFieldValidator.isValidName("Hasarel"))
         
         //Testing an invalid name
-        XCTAssertFalse(InputFieldValidator.isValidName("hishara123"))
+        XCTAssertFalse(InputFieldValidator.isValidName("Hasarel0987"))
         
         //Testing an invalid name
         XCTAssertFalse(InputFieldValidator.isValidName(""))
         
         //Testing a valid email
-        XCTAssertTrue(InputFieldValidator.isValidEmail("hish2k15@gmail.com"))
+        XCTAssertTrue(InputFieldValidator.isValidEmail("hasarel23@gmail.com"))
         
         //Testing an invalid email
-        XCTAssertFalse(InputFieldValidator.isValidEmail("abc@_gmail.com"))
+        XCTAssertFalse(InputFieldValidator.isValidEmail("abqqqqqqqqc@_gmail.com"))
         
         //Testing a valid mobileNo
-        XCTAssertTrue(InputFieldValidator.isValidMobileNo("0711116601"))
+        XCTAssertTrue(InputFieldValidator.isValidMobileNo("0713017537"))
         
         //Testing an invalid mobileNo
-        XCTAssertFalse(InputFieldValidator.isValidMobileNo("0112123455"))
+        XCTAssertFalse(InputFieldValidator.isValidMobileNo("0981234""d5y"))
         
         //Testing an invalid mobileNo
-        XCTAssertFalse(InputFieldValidator.isValidMobileNo("072212345"))
+        XCTAssertFalse(InputFieldValidator.isValidMobileNo("07773e=-0999"))
         
         //Testing an invalid mobileNo
-        XCTAssertFalse(InputFieldValidator.isValidMobileNo("07a2212345"))
+        XCTAssertFalse(InputFieldValidator.isValidMobileNo("00000000000212345"))
         
         //Testing a valid password
-        XCTAssertTrue(InputFieldValidator.isValidPassword(pass: "abc@123", minLength: 6, maxLength: 20))
+        XCTAssertTrue(InputFieldValidator.isValidPassword(pass: "hasarel@123", minLength: 6, maxLength: 20))
         
         //Testing n invalid password
-        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "abc", minLength: 6, maxLength: 20))
+        XCTAssertFalse(InputFieldValidator.isValidPassword(pass: "hasarel", minLength: 6, maxLength: 20))
     }
 
     func testPerformanceExample() throws {
@@ -91,9 +91,9 @@ class CafeManagerRegisterTests : XCTestCase, FirebaseActions {
         result = expectation(description: "Successful signup!")
         let user = User(_id: "",
                         userName: "Hasarel Madola",
-                        email: "hish2k15@gmail.com",
-                        phoneNo: "0711116601",
-                        password: "abc@123", imageRes: "")
+                        email: "Hasarel123@gmail.com",
+                        phoneNo: "0713017537",
+                        password: "hasarel@123", imageRes: "")
         firebaseOP.registerUser(user: user)
         waitForExpectations(timeout: 10)
         XCTAssertEqual(self.userRegistered, true)
@@ -127,7 +127,7 @@ class CafeManagerLoginTests : XCTestCase, FirebaseActions {
     func testLogin() {
         firebaseOP.delegate = self
         result = expectation(description: "Successful login!")
-        firebaseOP.signInUser(email: "hisharadilshan3@gmail.com", password: "idmcc3")
+        firebaseOP.signInUser(email: "hasarel123@gmail.com", password: "123456")
         waitForExpectations(timeout: 10)
         XCTAssertEqual(self.userFound, true)
     }
