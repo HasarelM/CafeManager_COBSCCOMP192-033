@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderSummaryCell" customModule="CafeManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-FC-YDl">
+                        <rect key="frame" x="0.0" y="10" width="332" height="107"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="24.02.2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPH-EF-pFL">
+                                <rect key="frame" x="20" y="10" width="84.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" name="dark_gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Total : Rs. 0000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcf-hc-gec">
+                                <rect key="frame" x="169" y="75" width="143" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" name="orange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nya-Af-TT5">
+                                <rect key="frame" x="20" y="28.5" width="292" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UK-gd-zww">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                                        <color key="textColor" name="dark_gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty with Price" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-05-i0R">
+                                        <rect key="frame" x="156" y="0.0" width="136" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                                        <color key="textColor" name="dark_gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPe-du-mtu">
+                                <rect key="frame" x="20" y="75" width="62" height="22"/>
+                                <color key="backgroundColor" name="dark"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="2" maxX="15" maxY="2"/>
+                                <state key="normal" title="Print">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPrintPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZeN-6Y-Fs5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="light_gray_2"/>
+                        <constraints>
+                            <constraint firstItem="nya-Af-TT5" firstAttribute="leading" secondItem="e0n-FC-YDl" secondAttribute="leading" constant="20" id="ILD-t1-8J8"/>
+                            <constraint firstAttribute="trailing" secondItem="Xcf-hc-gec" secondAttribute="trailing" constant="20" id="LOF-PI-bop"/>
+                            <constraint firstItem="hPe-du-mtu" firstAttribute="top" secondItem="nya-Af-TT5" secondAttribute="bottom" constant="10" id="PlI-zg-Egn"/>
+                            <constraint firstItem="hPe-du-mtu" firstAttribute="leading" secondItem="e0n-FC-YDl" secondAttribute="leading" constant="20" symbolic="YES" id="U9Q-fl-DqM"/>
+                            <constraint firstItem="wPH-EF-pFL" firstAttribute="top" secondItem="e0n-FC-YDl" secondAttribute="top" constant="10" id="W8U-Y3-hRA"/>
+                            <constraint firstItem="nya-Af-TT5" firstAttribute="top" secondItem="wPH-EF-pFL" secondAttribute="bottom" id="Zv8-Xi-fw2"/>
+                            <constraint firstItem="Xcf-hc-gec" firstAttribute="top" secondItem="nya-Af-TT5" secondAttribute="bottom" constant="10" id="fDq-g3-Vqo"/>
+                            <constraint firstItem="wPH-EF-pFL" firstAttribute="leading" secondItem="e0n-FC-YDl" secondAttribute="leading" constant="20" id="mpe-ud-bMo"/>
+                            <constraint firstAttribute="bottom" secondItem="Xcf-hc-gec" secondAttribute="bottom" constant="10" id="nDQ-82-bdu"/>
+                            <constraint firstAttribute="bottom" secondItem="hPe-du-mtu" secondAttribute="bottom" constant="10" id="nre-KB-ijI"/>
+                            <constraint firstAttribute="trailing" secondItem="nya-Af-TT5" secondAttribute="trailing" constant="20" id="uWl-sU-WkE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e0n-FC-YDl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xnb-vH-dpP"/>
+                    <constraint firstAttribute="bottom" secondItem="e0n-FC-YDl" secondAttribute="bottom" constant="10" id="e0P-Es-bst"/>
+                    <constraint firstItem="e0n-FC-YDl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eLY-tQ-BvB"/>
+                    <constraint firstAttribute="trailing" secondItem="e0n-FC-YDl" secondAttribute="trailing" id="fUs-qB-UgF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="wPH-EF-pFL" id="0Ee-fE-vCe"/>
+                <outlet property="lblItemInfo" destination="1Hd-05-i0R" id="1Tb-iR-4wY"/>
+                <outlet property="lblItemNames" destination="8UK-gd-zww" id="RZK-J3-DAI"/>
+                <outlet property="lblTotalAmount" destination="Xcf-hc-gec" id="Crv-16-dyG"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="dark">
+            <color red="0.20800000429153442" green="0.22400000691413879" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dark_gray">
+            <color red="0.45899999141693115" green="0.49399998784065247" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light_gray_2">
+            <color red="0.96100002527236938" green="0.9570000171661377" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="1" green="0.42399999499320984" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

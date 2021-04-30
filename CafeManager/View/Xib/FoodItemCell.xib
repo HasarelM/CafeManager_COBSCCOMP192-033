@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="FoodItemCell" customModule="CafeManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqm-LS-2kE">
+                        <rect key="frame" x="0.0" y="10" width="360" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhW-HX-Goh">
+                                <rect key="frame" x="108" y="21" width="83.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken patty hamburger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-7x-Rc8">
+                                <rect key="frame" x="108" y="40" width="232" height="12"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                                <color key="textColor" name="dark_gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RS. 1500.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9at-6W-7GM">
+                                <rect key="frame" x="108" y="62" width="66.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-T7-FF9">
+                                <rect key="frame" x="280" y="10" width="60" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30% OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAU-7a-BtR">
+                                        <rect key="frame" x="8.5" y="4" width="43" height="12"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.63529413940000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7Fe-7l-vbM"/>
+                                    <constraint firstItem="cAU-7a-BtR" firstAttribute="centerX" secondItem="sIf-T7-FF9" secondAttribute="centerX" id="d4e-wM-ROy"/>
+                                    <constraint firstItem="cAU-7a-BtR" firstAttribute="centerY" secondItem="sIf-T7-FF9" secondAttribute="centerY" id="iMA-Vz-A5J"/>
+                                    <constraint firstAttribute="height" constant="20" id="ySL-xg-nU6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-gH-Nxf">
+                                <rect key="frame" x="20" y="10" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="jh1-g4-8r8"/>
+                                    <constraint firstAttribute="width" constant="80" id="jhc-uK-ihs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFg-xa-VqN">
+                                <rect key="frame" x="291" y="62" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.63529413940000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="onFoodStatusChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="y9Z-ko-una"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" name="light_gray_2"/>
+                        <constraints>
+                            <constraint firstItem="9at-6W-7GM" firstAttribute="top" secondItem="Rcd-7x-Rc8" secondAttribute="bottom" constant="10" id="8rC-eZ-Sq2"/>
+                            <constraint firstAttribute="trailing" secondItem="Rcd-7x-Rc8" secondAttribute="trailing" constant="20" id="G2r-x8-t6d"/>
+                            <constraint firstItem="Rcd-7x-Rc8" firstAttribute="top" secondItem="sIf-T7-FF9" secondAttribute="bottom" constant="10" id="NPW-Js-sDT"/>
+                            <constraint firstItem="sIf-T7-FF9" firstAttribute="top" secondItem="G7z-gH-Nxf" secondAttribute="top" id="No9-Jf-S05"/>
+                            <constraint firstItem="Rcd-7x-Rc8" firstAttribute="top" secondItem="WhW-HX-Goh" secondAttribute="bottom" constant="5" id="Uca-hA-4ss"/>
+                            <constraint firstItem="G7z-gH-Nxf" firstAttribute="centerY" secondItem="cqm-LS-2kE" secondAttribute="centerY" id="bat-BY-xEf"/>
+                            <constraint firstAttribute="trailing" secondItem="sIf-T7-FF9" secondAttribute="trailing" constant="20" id="bin-qD-nyY"/>
+                            <constraint firstItem="Rcd-7x-Rc8" firstAttribute="leading" secondItem="G7z-gH-Nxf" secondAttribute="trailing" constant="8" symbolic="YES" id="f87-XE-hZD"/>
+                            <constraint firstAttribute="trailing" secondItem="hFg-xa-VqN" secondAttribute="trailing" constant="20" id="lfP-of-lT8"/>
+                            <constraint firstItem="G7z-gH-Nxf" firstAttribute="leading" secondItem="cqm-LS-2kE" secondAttribute="leading" constant="20" symbolic="YES" id="otF-JG-0Ia"/>
+                            <constraint firstItem="9at-6W-7GM" firstAttribute="leading" secondItem="G7z-gH-Nxf" secondAttribute="trailing" constant="8" symbolic="YES" id="u8X-0G-Bf1"/>
+                            <constraint firstItem="WhW-HX-Goh" firstAttribute="leading" secondItem="G7z-gH-Nxf" secondAttribute="trailing" constant="8" symbolic="YES" id="upw-70-xaE"/>
+                            <constraint firstItem="hFg-xa-VqN" firstAttribute="top" secondItem="Rcd-7x-Rc8" secondAttribute="bottom" constant="10" id="xs9-Cm-sSz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cqm-LS-2kE" secondAttribute="trailing" id="3lM-aO-8B9"/>
+                    <constraint firstItem="cqm-LS-2kE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="guR-hn-xHZ"/>
+                    <constraint firstItem="cqm-LS-2kE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p8z-iT-4SF"/>
+                    <constraint firstAttribute="bottom" secondItem="cqm-LS-2kE" secondAttribute="bottom" constant="10" id="pGm-X9-ktW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFood" destination="G7z-gH-Nxf" id="5hu-M1-6rT"/>
+                <outlet property="lblDiscount" destination="cAU-7a-BtR" id="Ci6-wP-you"/>
+                <outlet property="lblFoodDescription" destination="Rcd-7x-Rc8" id="uaW-EN-ucj"/>
+                <outlet property="lblFoodName" destination="WhW-HX-Goh" id="Z79-i9-Ldh"/>
+                <outlet property="lblFoodPrice" destination="9at-6W-7GM" id="FZx-nr-UbW"/>
+                <outlet property="switchIsActive" destination="hFg-xa-VqN" id="bBX-JC-0Zs"/>
+                <outlet property="viewOfferContainer" destination="sIf-T7-FF9" id="vIV-b4-148"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="26.785714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="burger" width="80" height="80"/>
+        <namedColor name="dark_gray">
+            <color red="0.45899999141693115" green="0.49399998784065247" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light_gray_2">
+            <color red="0.96100002527236938" green="0.9570000171661377" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
